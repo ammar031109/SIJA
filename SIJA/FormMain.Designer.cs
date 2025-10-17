@@ -30,7 +30,7 @@
         {
             this.lblName = new System.Windows.Forms.Label();
             this.btnTeacher = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnStudent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,15 +54,15 @@
             this.btnTeacher.UseVisualStyleBackColor = true;
             this.btnTeacher.Click += new System.EventHandler(this.btnTeacher_Click);
             // 
-            // button3
+            // btnLogout
             // 
-            this.button3.Location = new System.Drawing.Point(653, 82);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 37);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Log Out";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnLogout.Location = new System.Drawing.Point(653, 82);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(107, 37);
+            this.btnLogout.TabIndex = 3;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnStudent
             // 
@@ -80,7 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnStudent);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnTeacher);
             this.Controls.Add(this.lblName);
             this.Name = "FormMain";
@@ -96,7 +96,7 @@
 
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnTeacher;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnStudent;
     }
 }

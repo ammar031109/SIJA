@@ -23,7 +23,7 @@ namespace SIJA
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="SIJA")]
-	public partial class loginDataContext : System.Data.Linq.DataContext
+	public partial class DataBaseDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -38,31 +38,31 @@ namespace SIJA
     partial void Deleteteacher(teacher instance);
     #endregion
 		
-		public loginDataContext() : 
+		public DataBaseDataContext() : 
 				base(global::SIJA.Properties.Settings.Default.SIJAConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public loginDataContext(string connection) : 
+		public DataBaseDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public loginDataContext(System.Data.IDbConnection connection) : 
+		public DataBaseDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public loginDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataBaseDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public loginDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataBaseDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

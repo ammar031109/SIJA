@@ -24,12 +24,6 @@ namespace SIJA
             lblName.Text = $"WELCOME, {name}!";
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            new FormLogin().Show();
-            Hide();
-        }
-
         private void btnTeacher_Click(object sender, EventArgs e)
         {
             new FormMasterTeacher().Show();
@@ -39,6 +33,12 @@ namespace SIJA
         private void btnStudent_Click(object sender, EventArgs e)
         {
             new FormMasterStudent().Show();
+            Hide();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            new FormLogin().Show();
             Hide();
         }
     }

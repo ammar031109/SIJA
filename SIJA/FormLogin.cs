@@ -33,7 +33,7 @@ namespace SIJA
 
             }
 
-            var db = new loginDataContext();
+            var db = new DataBaseDataContext();
             var user = db.teachers
                 .Where(x => x.name == tbName.Text && x.password == tbPassword.Text).FirstOrDefault();
 

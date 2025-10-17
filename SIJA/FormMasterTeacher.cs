@@ -13,7 +13,7 @@ namespace SIJA
 {
     public partial class FormMasterTeacher : Form
     {
-        loginDataContext db = new loginDataContext();
+        DataBaseDataContext db = new DataBaseDataContext();
         int selected_id = -1;
         public FormMasterTeacher()
         {
