@@ -26,8 +26,9 @@ namespace SIJA
 
         private void btnTeacher_Click(object sender, EventArgs e)
         {
-            new FormMasterTeacher().Show();
-            Hide();
+           FormMasterTeacher f2 = new FormMasterTeacher();
+            f2.Show();
+            this.Hide();
         }
 
         private void btnStudent_Click(object sender, EventArgs e)
@@ -40,6 +41,11 @@ namespace SIJA
         {
             new FormLogin().Show();
             Hide();
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
         }
     }
         

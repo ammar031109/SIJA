@@ -43,6 +43,7 @@
             this.lblName.Size = new System.Drawing.Size(361, 40);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "WELCOME, {NAME}!";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // btnTeacher
             // 

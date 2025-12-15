@@ -21,7 +21,7 @@ namespace SIJA
         private void Form1_Load(object sender, EventArgs e)
         {
             tbName.Text = "Purwanto";
-            tbPassword.Text = "pur123";
+            tbPassword.Text = "ka pur";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SIJA;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SIJA
@@ -153,6 +154,13 @@ namespace SIJA
             showData();
             MessageBox.Show("Data successfully deleted"); 
             selected_id = -1; 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FormMain f1 = Application.OpenForms["formMain"] as FormMain;
+            f1.Show();
+            this.Close();
         }
     }
     
